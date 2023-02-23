@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #f2eae2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.flex-container {
+  background: #fff;
+  border-radius: 10px;
+  width: 343px;
+}
+
+.product-img {
+  border-radius: 10px 10px 0 0;
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__product-info {
+  padding: 1.5rem;
+}
+
+a.category-link__prefume {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.3125rem;
+  color: #6c7289;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+}
+
+h1.product-name {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #1c232b;
+  margin-bottom: 1rem;
+}
+
+p.product-info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.4375rem;
+  color: #6c7289;
+  margin-bottom: 1.5rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 194px;
+  margin-bottom: 1.25rem;
+}
+
+.current-price {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #3d8168;
+}
+
+.previous-price {
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  text-decoration-line: line-through;
+  color: #6c7289;
+}
+
+.btn__add-to-cart {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  text-align: center;
+  color: #fff;
+  background-color: #3d8168;
+  border-radius: 8px;
+  padding: 0.9375rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  margin-right: 11.61px;
+}
