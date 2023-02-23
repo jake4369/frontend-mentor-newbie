@@ -10,6 +10,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="index.css" />
+
     <title>Product preview card component</title>
   </head>
   <body>
@@ -19,7 +21,11 @@
           media="(min-width: 768px)"
           srcset="images/image-product-desktop.jpg"
         />
-        <img src="images/image-product-mobile.jpg" alt="Product image" />
+        <img
+          src="images/image-product-mobile.jpg"
+          alt="Product image"
+          class="product-img"
+        />
       </picture>
 
       <section class="section__product-info">
@@ -37,7 +43,15 @@
           <span class="previous-price">$169.99</span>
         </div>
 
-        <div class="btn__add-to-cart">Add to Cart</div>
+        <div class="btn__add-to-cart">
+          <img
+            src="images/icon-cart.svg"
+            alt=""
+            aria-disabled="true"
+            class="cart-icon"
+          />
+          Add to Cart
+        </div>
       </section>
     </main>
   </body>
