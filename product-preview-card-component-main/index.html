@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <title>Product preview card component</title>
+  </head>
+  <body>
+    <main class="flex-container">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/image-product-desktop.jpg"
+        />
+        <img src="images/image-product-mobile.jpg" alt="Product image" />
+      </picture>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <section class="section__product-info">
+        <a href="#" class="category-link__prefume">perfume</a>
 
-  Preview
+        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
 
-  Gabrielle Essence Eau De Parfum
+        <p class="product-info">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+        <div class="price-container">
+          <span class="current-price">$149.99</span>
+          <span class="previous-price">$169.99</span>
+        </div>
 
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="btn__add-to-cart">Add to Cart</div>
+      </section>
+    </main>
+  </body>
 </html>
