@@ -34,6 +34,10 @@ body {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
 }
 
+/* ==============================================================
+ MOBILE STYLES
+ ============================================================== */
+
 /* ==========
  TYPOGRAPHY
  ========== */
@@ -168,4 +172,68 @@ footer {
   background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
   border-radius: 28px;
   padding: 0.5625rem 1.5rem 0.6875rem;
+}
+
+/* ==============================================================
+ TABLET STYLES
+ ============================================================== */
+@media (min-width: 768px) {
+  body {
+    background-image: url("assets/image-hero-tablet@2x.webp");
+    background-size: clamp(640.71px, 100%, 640px);
+    background-repeat: no-repeat;
+    background-position: right -267.71px top -72px;
+  }
+
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  .hero-section__h1 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  .about-section__h2 {
+    padding: 3.5rem 1.3125rem 8.6875rem 2rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  /* HEADER */
+  header {
+    margin: 1.5rem auto 6.1875rem auto;
+    width: 89.7135416667%;
+  }
+
+  /* HERO SECTION */
+  .hero-section {
+    margin: 0 auto;
+    width: 89.7135416667%;
+    margin-bottom: 13.125rem;
+  }
+
+  .hero-section__text-container {
+    width: 57.7648766328%;
+    max-width: 457px;
+  }
+
+  .hero-section__img {
+    display: none;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    width: 89.7135416667%;
+    margin: 0 auto 6rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 49.2017416546%);
+    gap: 3.5rem 1.59651669086%;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2.25rem 5.078125%;
+  }
 }
