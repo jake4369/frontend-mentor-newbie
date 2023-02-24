@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-5P4ywrbGCH]
 - Live Site URL: [https://polite-phoenix-02649a.netlify.app/]
 
 ## My process
