@@ -32,6 +32,7 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f2ff 100%);
 }
 
 /* ==============================================================
@@ -311,6 +312,10 @@ footer {
   .hero-section {
     margin: 0 auto 15.625rem auto;
     width: 77.0833333333%;
+  }
+
+  .btn__hero-section {
+    padding: 1.1875rem 1.9375rem 1rem 2rem;
   }
 
   .btn__hero-section:hover,
