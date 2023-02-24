@@ -67,11 +67,13 @@ p {
 }
 
 .about-section__h2 {
-  display: block;
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 2rem;
   color: #fff;
+}
+
+.h2-container {
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   border-radius: 10px;
   padding: 1.5rem 1.8125rem 2rem 1.75rem;
@@ -159,6 +161,10 @@ header {
   left: 1.75rem;
 }
 
+.study-img {
+  display: none;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -194,10 +200,6 @@ footer {
     margin-bottom: 1.5625rem;
   }
 
-  .about-section__h2 {
-    padding: 3.5rem 1.3125rem 8.6875rem 2rem;
-  }
-
   /* ==========
   LAYOUT
   ========== */
@@ -209,9 +211,8 @@ footer {
 
   /* HERO SECTION */
   .hero-section {
-    margin: 0 auto;
+    margin: 0 auto 13.125rem auto;
     width: 89.7135416667%;
-    margin-bottom: 13.125rem;
   }
 
   .hero-section__text-container {
@@ -232,8 +233,172 @@ footer {
     gap: 3.5rem 1.59651669086%;
   }
 
+  .h2-container {
+    padding: 3.5rem 1.3125rem 8.6875rem 2rem;
+  }
+
   /* FOOTER */
   footer {
     padding: 2.25rem 5.078125%;
+  }
+}
+
+/* ==============================================================
+ DESKTOP STYLES
+ ============================================================== */
+@media (min-width: 1440px) {
+  body {
+    background-image: url("assets/image-hero-desktop@2x.webp");
+    background-size: 991.63px, 936.92px;
+    background-position: right -335px top -146.13px;
+  }
+
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  .btn {
+    font-size: 1.125rem;
+    cursor: pointer;
+  }
+
+  .hero-section__h1 {
+    font-size: 3.5rem;
+    line-height: 4.4375rem;
+    margin-bottom: 1.8125rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .design-component p,
+  .photography-component p {
+    margin-bottom: 3.25rem;
+  }
+
+  .about-section__h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .about-section__component__h3 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  /* HEADER */
+  header {
+    margin: 1.8125rem auto 11.125rem auto;
+    width: 77.0833333333%;
+  }
+
+  .btn__header,
+  .btn__footer {
+    padding: 0.875rem 1.9375rem 0.875rem 2rem;
+  }
+
+  .btn__header:hover,
+  .btn__header:focus {
+    background: #666ca3;
+  }
+
+  /* HERO SECTION */
+  .hero-section {
+    margin: 0 auto 15.625rem auto;
+    width: 77.0833333333%;
+  }
+
+  .btn__hero-section:hover,
+  .btn__hero-section:focus {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    width: 77.0833333333%;
+    margin: 0 auto 8.75rem auto;
+    grid-template-columns: repeat(3, 31.5315315315%);
+    gap: 5rem 2.7027027027%;
+  }
+
+  .h2-container {
+    position: relative;
+    padding: 4rem 2rem 8.625rem;
+    overflow: hidden;
+  }
+
+  .study-img {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 250px;
+    right: -250px;
+    transition: right 0.5s ease-in-out;
+  }
+
+  .h2-container:hover .study-img {
+    right: -32px;
+  }
+
+  .about-section__component {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .about-section__component:hover {
+    transform: scale(1.125);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 11.4583333333%;
+  }
+
+  .logo__footer {
+    width: 7.125rem;
+  }
+
+  .btn__footer:hover,
+  .btn__footer:focus {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
+
+  /* ANIMATIONS */
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #f74780;
+  }
+
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f74780;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }
