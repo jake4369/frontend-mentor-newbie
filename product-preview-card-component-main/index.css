@@ -28,7 +28,8 @@ body {
 .flex-container {
   background: #fff;
   border-radius: 10px;
-  width: 343px;
+  width: 91.466667%;
+  max-width: 343px;
 }
 
 .product-img {
@@ -112,4 +113,51 @@ p.product-info {
 
 .cart-icon {
   margin-right: 11.61px;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    display: flex;
+    height: 28.125rem;
+    width: 600px;
+    max-width: unset;
+  }
+
+  .product-img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 300px;
+    mix-blend-mode: darken;
+  }
+
+  .section__product-info {
+    padding: 2rem;
+    width: 300px;
+  }
+
+  a.category-link__prefume {
+    margin-bottom: 1.25rem;
+  }
+
+  h1.product-name {
+    margin-bottom: 1.5rem;
+  }
+
+  p.product-info {
+    margin-bottom: 1.8125rem;
+  }
+
+  .price-container {
+    margin-bottom: 1.875rem;
+  }
+
+  .btn__add-to-cart {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn__add-to-cart:hover,
+  .btn__add-to-cart:focus {
+    background: #1a4032;
+  }
 }
