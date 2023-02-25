@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 const radioToolbar = document.getElementById("radio-toolbar");
 const submitBtn = document.getElementById("submit-btn");
-let rating = 1;
+let rating;
 
 radioToolbar.addEventListener("change", (e) => {
   if (e.target.type === "radio") {
