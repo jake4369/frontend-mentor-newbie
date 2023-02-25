@@ -11,6 +11,7 @@ radioToolbar.addEventListener("change", (e) => {
 
 function renderThankYou(rating) {
   const html = `
+    <div class="thank-you-container">
         <img
         src="images/illustration-thank-you.svg"
         alt=""
@@ -27,12 +28,12 @@ function renderThankYou(rating) {
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
         </p>
+    </div>
     `;
   container.innerHTML = html;
 }
 
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+submitBtn.addEventListener("click", () => {
   if (rating) {
     renderThankYou(rating);
   }
