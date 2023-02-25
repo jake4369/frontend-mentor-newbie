@@ -150,8 +150,7 @@ p {
     transition: all 0.3s ease-in-out;
   }
 
-  .submit-btn:hover,
-  .submit-btn:focus {
+  .submit-btn:hover {
     color: #fc7614;
     background: #fff;
   }
