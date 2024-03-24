@@ -1,4 +1,4 @@
-const Rating = () => {
+const Rating = ({ onSelectRating }) => {
   return (
     <div className="component rating-component">
       <img src="/images/icon-star.svg" alt="" className="star-icon" />
@@ -11,19 +11,49 @@ const Rating = () => {
       </p>
 
       <div className="rating-btns">
-        <input type="radio" name="rating" id="rating-1" />
+        <input
+          type="radio"
+          name="rating"
+          id="rating-1"
+          value={1}
+          onChange={(e) => onSelectRating(e.target.value)}
+        />
         <label htmlFor="rating-1">1</label>
 
-        <input type="radio" name="rating" id="rating-2" />
+        <input
+          type="radio"
+          name="rating"
+          id="rating-2"
+          value={2}
+          onChange={(e) => onSelectRating(e.target.value)}
+        />
         <label htmlFor="rating-2">2</label>
 
-        <input type="radio" name="rating" id="rating-3" />
+        <input
+          type="radio"
+          name="rating"
+          id="rating-3"
+          value={3}
+          onChange={(e) => onSelectRating(e.target.value)}
+        />
         <label htmlFor="rating-3">3</label>
 
-        <input type="radio" name="rating" id="rating-4" />
+        <input
+          type="radio"
+          name="rating"
+          id="rating-4"
+          value={4}
+          onChange={(e) => onSelectRating(e.target.value)}
+        />
         <label htmlFor="rating-4">4</label>
 
-        <input type="radio" name="rating" id="rating-5" />
+        <input
+          type="radio"
+          name="rating"
+          id="rating-5"
+          value={5}
+          onChange={(e) => onSelectRating(e.target.value)}
+        />
         <label htmlFor="rating-5">5</label>
       </div>
 
