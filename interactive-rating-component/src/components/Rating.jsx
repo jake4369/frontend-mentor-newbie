@@ -1,4 +1,4 @@
-const Rating = ({ onSelectRating }) => {
+const Rating = ({ onSelectRating, onHandleSubmit }) => {
   return (
     <div className="component rating-component">
       <img src="/images/icon-star.svg" alt="" className="star-icon" />
@@ -57,7 +57,9 @@ const Rating = ({ onSelectRating }) => {
         <label htmlFor="rating-5">5</label>
       </div>
 
-      <button className="btn-submit">Submit</button>
+      <button className="btn-submit" onClick={onHandleSubmit}>
+        Submit
+      </button>
     </div>
   );
 };
