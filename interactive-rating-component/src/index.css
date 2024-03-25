@@ -44,6 +44,7 @@ body {
   border-radius: 30px;
   width: 87.2%;
   max-width: 25.75rem;
+  min-height: 22.5rem;
 }
 
 /* ==========
@@ -132,9 +133,56 @@ RATING COMPONENT
 }
 
 /* ==========
-MEDIA QUERIES
+CONFIRMATION COMPONENT
 ========== */
+.confirmation-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.125rem 1.5rem 2.3125rem;
+  text-align: center;
+}
+
+.confirmation-img {
+  display: block;
+  width: 9rem;
+  margin-bottom: 1.5rem;
+}
+
+div.message__rating {
+  color: var(--orange);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  padding: 0.3125rem 0.75rem;
+  border-radius: 1.4063rem;
+  background-color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-component h2 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.confirmation-component p {
+  color: var(--light-grey);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* ========================================
+MEDIA QUERIES
+======================================== */
+
 @media (min-width: 28.125rem) {
+  .component {
+    min-height: 26rem;
+  }
+
   /* ==========
   RATING COMPONENT
   ========== */
@@ -188,5 +236,34 @@ MEDIA QUERIES
   .btn-submit:hover {
     background-color: var(--white);
     color: var(--orange);
+  }
+
+  /* ==========
+ CONFIRMATION COMPONENT
+ ========== */
+  .confirmation-component {
+    padding: 2.8125rem 2.5rem 2.8125rem 2rem;
+    text-align: center;
+  }
+
+  .confirmation-img {
+    width: 10.125rem;
+    margin-bottom: 2rem;
+  }
+
+  div.message__rating {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    padding: 0.125rem 1.1875rem 0.25rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .confirmation-component h2 {
+    font-size: 1.75rem;
+  }
+
+  .confirmation-component p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
   }
 }
